@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <form id="marksheet-form">
+        <h1>Marksheet Generator</h1>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="roll">Roll Number:</label>
+            <input type="text" id="roll" name="roll" required>
+        </div>
+        <div>
+            <label for="subject1">Subject 1 Marks:</label>
+            <input type="number" id="subject1" name="subject1" required>
+        </div>
+        <div>
+            <label for="subject2">Subject 2 Marks:</label>
+            <input type="number" id="subject2" name="subject2" required>
+        </div>
+        <div>
+            <label for="subject3">Subject 3 Marks:</label>
+            <input type="number" id="subject3" name="subject3" required>
+        </div>
+        <div>
+            <label for="subject4">Subject 4 Marks:</label>
+            <input type="number" id="subject4" name="subject4" required>
+        </div>
+        <div>
+            <label for="subject5">Subject 5 Marks:</label>
+            <input type="number" id="subject5" name="subject5" required>
+        </div>
+        <button type="button" onclick="generateMarksheet()">Generate Marksheet</button>
+    </form>
+
+    <div id="marksheet">
+        <h2>Marksheet</h2>
+        <p><strong>Name:</strong> <span id="marksheet-name"></span></p>
+        <p><strong>Roll Number:</strong> <span id="marksheet-roll"></span></p>
+        <p><strong>Subject 1:</strong> <span id="marksheet-subject1"></span></p>
+        <p><strong>Subject 2:</strong> <span id="marksheet-subject2"></span></p>
+        <p><strong>Subject 3:</strong> <span id="marksheet-subject3"></span></p>
+        <p><strong>Subject 4:</strong> <span id="marksheet-subject4"></span></p>
+        <p><strong>Subject 5:</strong> <span id="marksheet-subject5"></span></p>
+        <p><strong>Total Marks:</strong> <span id="marksheet-total"></span></p>
+        <p><strong>Percentage:</strong> <span id="marksheet-percentage"></span>%</p>
+        <p><strong>Result:</strong> <span id="marksheet-result"></span></p>
+    </div>
+</body>
+
+</html
